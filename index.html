@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Redact - Support & Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a2e;
+            background-color: #f0f4f8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #0066cc;
+        }
+        .last-updated {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #1a1a2e;
+        }
+        p, li {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        a { color: #0066cc; }
+        .email-link { font-weight: bold; }
+    </style>
+    <script>
+        function e(id) {
+            var u = 'redactpdf.app', d = 'gmail.com';
+            var el = document.getElementById(id);
+            el.innerHTML = '<a href="ma' + 'ilto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+        }
+        window.addEventListener('DOMContentLoaded', function() {
+            e('email1'); e('email2'); e('email3');
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+        <p class="last-updated">We're here to help with anything related to PDF Redact.</p>
+
+        <h2>Contact Us</h2>
+        <p>For questions, feedback, or any issues with the app, reach out to us at:</p>
+        <p class="email-link" id="email1"></p>
+        <p>We typically respond within 24 hours.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3 style="font-size:16px; margin-top:20px; margin-bottom:8px;">How does the smart detection work?</h3>
+        <p>PDF Redact uses on-device AI and pattern matching to automatically detect sensitive information like names, addresses, SSNs, account numbers, and transaction details. All processing happens locally on your device — your documents are never uploaded to any server.</p>
+
+        <h3 style="font-size:16px; margin-top:20px; margin-bottom:8px;">What are presets?</h3>
+        <p>Presets are quick configurations that enable the right detection categories for common use cases: Standard PII, Bank Statement, Tax Documents, Medical/HIPAA, and Legal/Court. You can also manually toggle individual categories.</p>
+
+        <h3 style="font-size:16px; margin-top:20px; margin-bottom:8px;">Is my document data sent anywhere?</h3>
+        <p>No. All document processing, AI detection, and redaction happens entirely on your device. Your PDFs never leave your phone or tablet.</p>
+
+        <h3 style="font-size:16px; margin-top:20px; margin-bottom:8px;">How do I restore my purchase?</h3>
+        <p>Open the app, go to the paywall screen, and tap "Restore Purchases." Your premium access will be restored if you've previously purchased it on the same Apple ID.</p>
+
+        <h3 style="font-size:16px; margin-top:20px; margin-bottom:8px;">How do I report a bug?</h3>
+        <p>Email us at <span class="email-link" id="email2"></span> with a description of the issue and your device model. Screenshots of the issue are very helpful.</p>
+
+        <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 40px 0;">
+
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: April 11, 2026</p>
+
+        <p>PDF Redact ("we", "our", or "the app") is a document redaction app that helps you remove sensitive information from PDFs before sharing them. We take your privacy seriously. This policy explains what data the app collects, how it is used, and your rights.</p>
+
+        <h2>1. Data We Collect</h2>
+        <p>PDF Redact is designed to process your documents entirely on your device. We collect minimal data:</p>
+        <ul>
+            <li><strong>Documents you open</strong> — PDFs and images you import are processed locally on your device. They are never uploaded to our servers or any third-party service.</li>
+            <li><strong>Export count</strong> — we track the number of exports locally on your device to manage the free tier limit. This count is stored in UserDefaults and never transmitted.</li>
+            <li><strong>Purchase status</strong> — managed entirely through Apple's StoreKit. We do not receive or store payment information.</li>
+        </ul>
+
+        <h2>2. How Your Data Is Stored</h2>
+        <p>All document processing happens <strong>locally on your device</strong>:</p>
+        <ul>
+            <li>AI-based sensitive data detection (BERT model, NLTagger) runs entirely on-device using Core ML and Apple's NaturalLanguage framework.</li>
+            <li>OCR text recognition runs on-device using Apple's Vision framework.</li>
+            <li>Redacted PDFs are generated locally and saved or shared through the standard iOS share sheet.</li>
+            <li>No document content, detected text, or redaction data is transmitted to any server.</li>
+        </ul>
+        <p>If you delete the app, all locally stored data (export count, preferences) is permanently removed.</p>
+
+        <h2>3. Photo Library Access</h2>
+        <p>The app requests photo library access to let you import images (photos of documents) for redaction. Images you select are processed locally on your device only. They are not uploaded to any server or shared with third parties.</p>
+
+        <h2>4. Third-Party Services</h2>
+        <p>The app uses the following third-party services:</p>
+        <ul>
+            <li><strong>Apple StoreKit</strong> — used to process the optional premium purchase. All payment processing is handled entirely by Apple. We do not receive or store any payment or financial information.</li>
+            <li><strong>Meta (Facebook) SDK</strong> — used to measure the effectiveness of our advertising campaigns. If you grant tracking permission via Apple's App Tracking Transparency prompt, the SDK may collect your device's advertising identifier (IDFA) to attribute app installs and in-app events to our ads. See <a href="https://www.facebook.com/privacy/policy/">Meta's Privacy Policy</a> for details.</li>
+        </ul>
+
+        <h2>5. Analytics and Tracking</h2>
+        <p>We use the <strong>Meta (Facebook) SDK</strong> to measure advertising campaign performance. This SDK may collect:</p>
+        <ul>
+            <li><strong>Device advertising identifier (IDFA)</strong> — only if you grant permission via Apple's App Tracking Transparency prompt</li>
+            <li><strong>App events</strong> — such as app install and premium purchase</li>
+        </ul>
+        <p>You can deny tracking permission when prompted, or change your choice at any time in your device's Settings &rarr; Privacy & Security &rarr; Tracking. If you deny permission, the SDK will only receive limited, aggregated data through Apple's SKAdNetwork framework. There are no ads displayed within the app.</p>
+
+        <h2>6. Data Sharing</h2>
+        <p>We do <strong>not</strong> sell your personal data. We do <strong>not</strong> have access to your documents. The only external data transmissions from the app are:</p>
+        <ul>
+            <li>Purchase transactions processed by Apple</li>
+            <li>App install and conversion events to Meta for advertising measurement (subject to your tracking permission)</li>
+        </ul>
+
+        <h2>7. On-Device AI Processing</h2>
+        <p>PDF Redact uses machine learning models that run entirely on your device:</p>
+        <ul>
+            <li><strong>BERT PII Detection Model</strong> — a Core ML model that identifies names, addresses, and other sensitive entities in text. Runs locally via Core ML.</li>
+            <li><strong>Apple Vision OCR</strong> — extracts text from scanned/image PDFs. Runs locally via the Vision framework.</li>
+            <li><strong>Apple NLTagger</strong> — provides additional name recognition. Runs locally via the NaturalLanguage framework.</li>
+        </ul>
+        <p>No document text, detected entities, or AI model inputs/outputs are ever sent to any server. All AI processing is private and on-device.</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>PDF Redact is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+        <h2>9. Your Rights</h2>
+        <p>Since all document data is processed and stored locally on your device, you have full control:</p>
+        <ul>
+            <li><strong>Access</strong> — your documents are only on your device</li>
+            <li><strong>Delete</strong> — uninstalling the app removes all app data</li>
+            <li><strong>Control</strong> — you choose which documents to open, what to redact, and where to share the redacted output</li>
+        </ul>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have questions about this privacy policy, please contact us at:</p>
+        <p class="email-link" id="email3"></p>
+    </div>
+</body>
+</html>
