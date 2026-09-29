@@ -91,7 +91,7 @@
         <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 40px 0;">
 
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: July 14, 2026</p>
+        <p class="last-updated">Last updated: September 29, 2026</p>
 
         <p>PDF Redact ("we", "our", or "the app") is a document redaction app that helps you remove sensitive information from PDFs before sharing them. We take your privacy seriously. This policy explains what data the app collects, how it is used, and your rights.</p>
 
@@ -101,6 +101,7 @@
             <li><strong>Documents you open</strong> — PDFs and images you import are processed locally on your device. They are never uploaded to our servers or any third-party service.</li>
             <li><strong>Export count</strong> — we track the number of exports locally on your device to manage the free tier limit. This count is stored in UserDefaults and never transmitted.</li>
             <li><strong>Purchase status</strong> — managed entirely through Apple's StoreKit. We do not receive or store payment information.</li>
+            <li><strong>App usage and install data (iOS app)</strong> — the iOS app uses Google Analytics for Firebase to record app events such as the first time the app is opened, screens viewed, and in-app purchases, together with a randomly generated app-instance identifier, device and app version information, and an approximate location derived from your IP address. This data is used to understand how the app is used and to measure whether installs came from our ads. It never includes the content of your documents or any text detected in them, and it is not linked to your name, email, or Apple ID.</li>
         </ul>
 
         <h2>2. How Your Data Is Stored</h2>
@@ -117,17 +118,19 @@
         <p>The app requests photo library access to let you import images (photos of documents) for redaction. Images you select are processed locally on your device only. They are not uploaded to any server or shared with third parties.</p>
 
         <h2>4. Third-Party Services</h2>
-        <p>The app uses one third-party service:</p>
+        <p>The app uses the following third-party services:</p>
         <ul>
             <li><strong>Apple StoreKit</strong> — used to process the optional premium purchase. All payment processing is handled entirely by Apple. We do not receive or store any payment or financial information.</li>
+            <li><strong>Google Analytics for Firebase (iOS app)</strong> — collects the app usage and install data described in section 1. Google processes this data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The analytics data is linked to our Google Ads account so we can count installs that result from our ads.</li>
+            <li><strong>Apple SKAdNetwork and Apple Ads attribution</strong> — Apple's own privacy-preserving frameworks, which tell an ad network (Google, Meta, or Apple Ads) that an ad led to an install or purchase without identifying you or your device.</li>
         </ul>
-        <p>The app integrates no advertising, analytics, or attribution SDKs.</p>
+        <p>The app does not display ads and contains no advertising SDKs.</p>
 
         <h2>5. Analytics and Tracking</h2>
-        <p>PDF Redact does <strong>not</strong> track you. The app contains no analytics, advertising, or attribution software, does not collect your device's advertising identifier (IDFA), and does not link any data to you or share data with third parties for tracking. Because there is nothing to track, the app does not present an App Tracking Transparency prompt.</p>
+        <p>The iOS app uses Google Analytics for Firebase, as described above, to understand app usage and to measure how many installs come from our ads. PDF Redact does <strong>not</strong> collect your device's advertising identifier (IDFA), does not link analytics data to your identity, and does not combine it with data from other companies' apps or websites to target ads to you. For this reason the app does not present an App Tracking Transparency prompt.</p>
 
         <h2>6. Data Sharing</h2>
-        <p>We do <strong>not</strong> sell your personal data. We do <strong>not</strong> have access to your documents. The only data that ever leaves your device is the purchase transaction you initiate, which is processed by Apple. No document content, detected text, redaction data, analytics, or identifiers are transmitted anywhere.</p>
+        <p>We do <strong>not</strong> sell your personal data. We do <strong>not</strong> have access to your documents. Data that leaves your device is limited to the purchase transactions you initiate (processed by Apple), the analytics and install data described in sections 1 and 4 (sent to Google), and Apple's anonymous ad attribution signals. No document content, detected text, or redaction data is ever transmitted anywhere.</p>
 
         <h2>7. On-Device Processing</h2>
         <p>All document analysis and redaction processing happens entirely on your device using Apple's built-in frameworks. No document content is ever sent to any server. Your documents remain completely private.</p>
@@ -139,7 +142,7 @@
         <p>Since all document data is processed and stored locally on your device, you have full control:</p>
         <ul>
             <li><strong>Access</strong> — your documents are only on your device</li>
-            <li><strong>Delete</strong> — uninstalling the app removes all app data</li>
+            <li><strong>Delete</strong> — uninstalling the app removes all app data stored on your device. To ask us to delete analytics data associated with your app installation, contact us at the address below.</li>
             <li><strong>Control</strong> — you choose which documents to open, what to redact, and where to share the redacted output</li>
         </ul>
 
