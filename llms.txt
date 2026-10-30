@@ -1,0 +1,31 @@
+# PDF Redact
+
+> On-device PDF and photo redaction app for iPhone, iPad and Mac (App Store name: "Redact Document & PDF"). Finds personal information automatically, removes it from the file rather than covering it, and audits the export. Nothing is uploaded.
+
+- App Store: https://apps.apple.com/app/id6761928221
+- Overview: https://coderalert0.github.io/redact-pdf-site/app/
+- Support and privacy policy: https://coderalert0.github.io/redact-pdf-site/
+
+## Facts
+- Platforms: iPhone and iPad (iOS/iPadOS 17+), Mac (macOS 13+). One purchase covers all three.
+- Detects: names, addresses, Social Security numbers, account/routing/card numbers, phone numbers, emails, dates of birth, transaction tables.
+- Presets: Standard PII, Financial Statement, Tax Documents, Medical / HIPAA, HIPAA Safe Harbor, Legal / Court.
+- Court-filing format: keeps last four digits and birth year (Fed. R. Civ. P. 5.2, Fed. R. Bankr. P. 9037).
+- Export: pages rebuilt from visible content; redacted text removed; unredacted text stays searchable (PDF/A); metadata, annotations and bookmarks stripped; optional password.
+- Privacy audit on every export (leftover text, missed copies, metadata, annotations, bookmarks).
+- Pricing: first export free; then subscription (US $12.99/month with 7-day trial, or $39.99/year) or $4.99 one-time pack of 5 exports.
+
+## Guides
+- [How to redact a PDF on iPhone](https://coderalert0.github.io/redact-pdf-site/guides/redact-pdf-on-iphone/): Redact a PDF on your iPhone so the text is actually removed, not just covered. Step-by-step, on-device, with automatic detection of names, SSNs and account numbers.
+- [How to redact a PDF on iPad](https://coderalert0.github.io/redact-pdf-site/guides/redact-pdf-on-ipad/): Redact PDFs on iPad: automatic detection of personal information, tap-to-redact, Find & Redact, batch redaction and a privacy audit, all on the device.
+- [How to redact a PDF on a Mac](https://coderalert0.github.io/redact-pdf-site/guides/redact-pdf-on-mac/): Two ways to redact a PDF on Mac: Preview's built-in Redact tool for a few manual edits, or PDF Redact to find personal information automatically and verify the result.
+- [How to redact a bank statement](https://coderalert0.github.io/redact-pdf-site/guides/redact-bank-statement/): Redact a bank statement before sending it to a landlord, lender or employer: hide account numbers and transactions, keep your name, dates and balances. Step-by-step on iPhone, iPad or Mac.
+- [How to redact a Social Security number from a PDF](https://coderalert0.github.io/redact-pdf-site/guides/redact-social-security-number/): Remove Social Security numbers from a PDF so they can't be copied or searched, or leave only the last four digits. Works on forms, scans and photos.
+- [How to redact a W-2, 1099 or tax return](https://coderalert0.github.io/redact-pdf-site/guides/redact-tax-documents/): Redact tax documents before sharing them: remove SSNs, EINs, dates of birth and bank account and routing numbers from W-2s, 1099s and 1040s, on iPhone, iPad or Mac.
+- [How to redact a pay stub](https://coderalert0.github.io/redact-pdf-site/guides/redact-pay-stub/): Redact a pay stub so it still proves your income: hide your SSN, employee ID and direct-deposit account, keep employer, pay period and pay amounts.
+- [How to redact medical records](https://coderalert0.github.io/redact-pdf-site/guides/redact-medical-records/): Redact patient identifiers from medical records on iPhone, iPad or Mac, on-device. Includes a preset that targets HIPAA Safe Harbor's 18 identifiers, including dates.
+- [How to redact a court filing (FRCP 5.2 and Bankruptcy Rule 9037)](https://coderalert0.github.io/redact-pdf-site/guides/redact-court-filing/): Redact personal identifiers in court filings the way federal rules require: last four digits of SSNs and account numbers, birth year only, minors' initials. Built-in court-filing format.
+- [How to redact a scanned PDF or a photo of a document](https://coderalert0.github.io/redact-pdf-site/guides/redact-scanned-pdf-or-photo/): Redact scanned PDFs and photos of documents on iPhone, iPad or Mac. On-device text recognition finds names and numbers in images, then the export removes them.
+- [How to redact a PDF without uploading it](https://coderalert0.github.io/redact-pdf-site/guides/redact-pdf-without-uploading/): Online PDF redaction tools upload your document to their servers. Here's how to redact a PDF entirely on your iPhone, iPad or Mac, offline.
+- [How to check that a PDF is really redacted](https://coderalert0.github.io/redact-pdf-site/guides/check-pdf-redaction/): Black boxes don't always remove text. Four quick tests to check a redacted PDF before you send it: search, copy-paste, metadata and hidden copies.
+- [How to redact many PDFs at once](https://coderalert0.github.io/redact-pdf-site/guides/batch-redact-pdfs/): Batch redact a stack of PDFs or photos: automatic detection on each document, preview, and export them together, on iPhone, iPad or Mac.
